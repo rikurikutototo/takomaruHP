@@ -1,0 +1,227 @@
+// header
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.9;
+    box-shadow: 0px 5px 5px -5px #000000;
+    
+    .header-inner {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .header-left {
+            display: flex;
+
+            img {
+                width: 50px;
+                height: 50px;
+                padding-top: 3px;
+            }
+        }
+
+        .global-nav {
+            padding-top: 15px;
+            
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 30px;
+
+                    &:hover {
+                        border-bottom: 1px solid #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// top
+#top {
+    width: 100%;
+    margin: 0 auto;
+    height: 700px;
+    background-size: cover;
+
+    .top-inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+
+        .top-content-wrap {
+            width: 100%;
+            padding-top: 15%;
+
+            .delivery {
+                margin: 0;
+            }
+
+            .main-title {
+                font-size: 80px;
+                margin: 0;
+                color: #fff;
+                text-shadow:3px 0 5px #000000;
+                font-family: "Hannari";
+            }
+
+            .sub-title {
+                font-size: 20px;
+                color: #fff;
+                text-shadow:3px 0 5px #000000;
+            }
+        }
+    }
+}
+
+// about
+#about {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #fff;
+
+    .about-inner {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .about-left-box {
+            width: 45%;
+
+            .business-hour {
+                font-size: 30px;
+            }
+
+            .delivery {
+                text-align: center;
+                border-bottom: 1px solid #fff;
+            }
+
+            .phone-contact {
+                font-size: 20px;
+            }
+        }
+
+        .about-right-box {
+            padding-top: 150px;
+            width: 45%;
+
+            tr {
+
+                th {
+
+                    padding-bottom: 10px;
+                    font-size: 25px;
+
+                    small {
+                        padding-left: 15px;
+                    }
+
+                }
+            }
+
+            strong {
+                    font-size: 20px;
+                }
+        }
+    }
+}
+
+// contact
+#contact {
+    margin: 0 auto;
+
+    .contact-inner {
+        // background-color: red;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .contact-header {
+            font-size: 20px;
+            padding-top: 35px;
+            margin-bottom: 50px;
+        }
+
+        form {
+            text-align: center;
+        
+            input {
+                width: 100%;
+            }
+
+            textarea {
+                width: 100%;
+            }
+
+            .submit {
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+// footer
+footer {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(182, 178, 178);
+    text-align: center;
+
+    p {
+        padding-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+
+    // header
+    .global-nav {
+        display: none;
+    }
+    
+    #about {
+
+        .about-inner {
+            display: block;
+            width: 90%;
+
+            .about-left-box {
+                width: 100%;
+
+                .business-hour {
+                    font-size: 150%;
+                }
+
+                .delivery {
+                    text-align: left;
+                }
+
+                .phone-contact {
+                    font-size: 130%;
+                }
+            }
+
+            .about-right-box {
+                width: 100%;
+                padding-top: 50px;
+                text-align: right;
+            }
+        }
+    }
+}

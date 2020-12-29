@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="宅配専門店たこまるホームページです">
+    <meta name="google" content="notranslate">
+    <meta property="og:url" content="URL" />
+    <meta property="og:title" content="宅配専門店たこまる" />
+    <meta property="og:description" content="宅配専門店たこまるホームページ" />
+    <meta property="og:image" content="画像のURL" />
+    <meta property="og:type" content="タイプ">
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:locale" content="ja_JP(ページの言語)" />
+    <meta name="twitter:card" content="Twitterに表示するカードの種類" />
+    <meta name="twitter:site" content="Twitterのユーザー名(@xxxx)" />
+    <title>たこまる</title>
+    <link rel="stylesheet" href="css/front-page.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/drawer.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- ドロワー -->
+    <div class="drawer">
+        <div class="navbar_toggle">
+            <span class="navbar_toggle_icon"></span>
+            <span class="navbar_toggle_icon"></span>
+            <span class="navbar_toggle_icon"></span>
+        </div>
+    </div>
+
+    <!-- 隠れメニュー -->
+    <div class="menu disappear">
+        <ul style="margin: 0;">
+            <li><a href="#" class="drawer-item">Home</a></li>
+            <li><a href="#about" class="drawer-item">About</a></li>
+            <li><a href="#contact" class="drawer-item">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <img src="./img/takuhai.png" alt="">
+                <p class="delivery">宅配専門店 22:00 ~ 1:00</p>
+            </div>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- top -->
+    <section id="top">
+        <div class="top-inner">
+            <div class="top-content-wrap">
+                <h1 class="main-title">たこまる</h1>
+                <h2 class="sub-title">夜中、小腹が空いた時ははたこ焼きで決まり！</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <div class="about-inner">
+            <div class="about-left-box">
+                <h3 class="business-hour">営業時間:22:00 ~ 1:00</h3>
+                <p class="delivery"><i class="fas fa-truck"></i>宅配専門店</p>
+                <h4 class="phone-contact">※お電話でご注文ください。</h4>
+            </div>
+            <div class="about-right-box">
+                <table>
+                    <tr>
+                        <th>たこ焼き6個  :</th><th>450円<small>税込み</small></th>
+                    </tr>
+                    <tr>
+                        <th>たこ焼き8個  :</th><th>500円<small>税込み</small></th>
+                    </tr>
+                </table>
+                <p class="delivery">※すべて送料込み</p>
+                <strong><i class="fas fa-phone"></i> 070 - 1796 - 4679</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="contact-inner">
+            <form action="送信押した後移動するページのURL" method="post">
+                <h5 class="contact-header"><i class="far fa-address-book"></i>お問い合わせ</h5>
+                <label for="rendou"><p>お名前</p></label>
+                <input type="text" name="yourname" id="rendou" placeholder="山田　太郎">
+                <label for="phone"><p>電話番号</p></label>
+                <input type="text" name="yourphone" id="phone" placeholder="000-0000-0000">
+                <label for="mail"><p>メールアドレス</p></label>
+                <input type="email" name="yourmail" id="mail" placeholder="XXXXX@XXX.com">
+                <p>お問い合わせ内容</p>
+                <textarea name="yourcontact" cols="30" rows="10" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                <input type="submit" id="contact-content" value="送信する" class="submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2020 Takomaru inc.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
